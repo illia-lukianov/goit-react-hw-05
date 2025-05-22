@@ -1,0 +1,39 @@
+.header {
+    background-color: #696969;
+    display: flex;
+    justify-content: center;
+    margin: 0 30px;
+    border-bottom-left-radius:12px;
+    border-bottom-right-radius:12px;
+}
+
+.headerForm {
+    position: relative;
+}
+
+.searchBar {
+    width: 400px;
+    font-size: medium;
+    margin: 20px;
+    border-radius: 7px;
+    outline: none;
+    border:#696969;
+    height: 30px;
+    padding-left: 40px;
+}
+
+.submitButton {
+    position: absolute;
+    top: 21px;
+    right: 425px;
+    width: 35px;
+    height: 30px;
+    border: none;
+    background-color: #ffff;
+    cursor: pointer;
+}
+
+.searchBarIcon {
+    width: 20px;
+    height: 20px;
+}

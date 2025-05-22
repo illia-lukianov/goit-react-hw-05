@@ -1,0 +1,16 @@
+.LoadMoreBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 7px;
+    background-color: #696969;
+    border: 1px solid black;
+    margin: 0 auto 15px;
+}
+
+.LoadMoreBtnIcon {
+    width: 20px;
+    height: 20px;
+}
+

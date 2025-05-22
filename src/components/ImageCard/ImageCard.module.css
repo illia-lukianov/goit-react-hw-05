@@ -1,0 +1,11 @@
+.cardImg {
+    width: 400px;
+    height: 400px;
+    transition: ease 0.3s;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cardImg:hover {
+    scale: 1.05
+}

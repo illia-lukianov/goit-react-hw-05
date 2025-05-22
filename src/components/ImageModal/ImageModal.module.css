@@ -1,0 +1,46 @@
+.modalWrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.modalInfo {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 69px;
+    border-radius: 12px;
+}
+
+.modalImg {
+    width: 900px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.closeButton {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    transition: scale ease 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeButton:hover {
+    scale: 1.2;
+}
+
+.closeIcon {
+    width: 30px;
+    height: 30px;
+}
