@@ -1,0 +1,19 @@
+.title {
+    font-size: large;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+.listItem {
+    border: 1px solid white;
+    border-radius: 10px;
+
+} 
+.img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

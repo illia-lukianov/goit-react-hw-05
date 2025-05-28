@@ -1,0 +1,16 @@
+.navLinkList {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navLink {
+    color: gray;
+    text-decoration: none;
+    font-size: large;
+}
+
+.isActive {
+    color: red;
+    text-decoration: none;
+}

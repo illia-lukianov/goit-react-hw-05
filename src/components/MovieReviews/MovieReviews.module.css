@@ -1,0 +1,11 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item {
+    border: 1px solid aliceblue;
+    padding: 15px;
+    border-radius: 20px;
+}
