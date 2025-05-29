@@ -23,7 +23,6 @@ export default function MovieReviews() {
         LoadReviews();
     }, [movieId])
     
-    console.log(data)
     return (
         <>  
             <p>Review:</p>

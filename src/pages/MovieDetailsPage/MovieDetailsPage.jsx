@@ -26,7 +26,6 @@ export default function MovieDetailsPage() {
     fetchMovieDetails()
     }, [])
     
-    console.log(data)
     return (
         <>
             <Header/>
