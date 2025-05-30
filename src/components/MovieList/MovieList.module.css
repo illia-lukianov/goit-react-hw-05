@@ -2,6 +2,15 @@
     text-decoration: none;
 }
 
+.moviePageList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+    padding: 0;
+}
+
 .moviePageItem {
     width: 600px;
     height: 400px;
@@ -17,7 +26,10 @@
 
 .movieName {
     margin: 0;
+    margin-bottom: 10px;
     color: aliceblue;
+    display: flex;
+    justify-content: center;
 }
 
 .movieImage {

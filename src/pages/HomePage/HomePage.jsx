@@ -7,6 +7,7 @@ import MovieList from '../../components/MovieList/MovieList';
 import { toast, ToastContainer } from 'react-toastify';
 
 export default function HomePage() {
+  const [isSearched, setIsSearched] = useState(false);
   const [data, setData] = useState([]);
   const [loader, setLoader] = useState(false);
 
@@ -14,6 +15,7 @@ export default function HomePage() {
     async function query() {
       try {
         setLoader(true);
+        setIsSearched(true);
         setData([]);
         const responce = await queryTrandingMovies();
         setData(responce.data.results);
@@ -31,11 +33,7 @@ export default function HomePage() {
       <ToastContainer />
       <Navigation />
       <h1 className={css.title}>Tranding today</h1>
-      <ul className={css.homePageList}>
-        {data.map((movie) => (
-          <MovieList key={movie.id} movie={movie} />
-        ))}
-      </ul>
+       <MovieList movies={data} isSearched={isSearched}/>
       {loader && <p>Loading....</p>}
     </>
   );

@@ -12,7 +12,7 @@ export default function MoviesPage() {
   const [loader, setLoader] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query') ?? '';
-
+  const [isSearched, setIsSearched] = useState(false);
   async function handleSubmit(event) {
     event.preventDefault();
     const query = event.target.searchBar.value;
@@ -33,6 +33,7 @@ export default function MoviesPage() {
     async function fetchMovie() {
       try {
         setLoader(true);
+        setIsSearched(true);
         const responce = await querySearchMovie(query);
         if (responce.data.results.length > 0) {
           setData(responce.data.results);
@@ -57,11 +58,7 @@ export default function MoviesPage() {
           <FaSearch />
         </button>
       </form>
-      <ul className={css.moviePageList}>
-        {data.map((movie) => (
-          <MovieList key={movie.id} movie={movie} />
-        ))}
-      </ul>
+      <MovieList movies={data} isSearched={isSearched}/>
       {loader && <p>Loading....</p>}
     </>
   );

@@ -22,12 +22,3 @@
     font-size: large;
     background-color: aliceblue;
 }
-
-
-.moviePageList {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    gap: 10px;
-    justify-content: center;;
-}
